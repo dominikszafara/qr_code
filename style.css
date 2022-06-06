@@ -1,0 +1,106 @@
+.button {
+    background-color: lightslategray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+html, body{
+    height: 100%;
+    padding: 0;
+    align-content: space-around; 
+    background-color: whitesmoke;
+}
+.container {
+    background-color: whitesmoke;
+    height: 80%;
+    align-content: space-around; 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'header header header'
+    'left main right'
+    'footer footer footer';
+ 
+}
+
+.header { 
+    grid-area: header; 
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.left{
+    text-align: center;
+}
+
+.main{
+   grid-area: main;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    width: 330px;
+    
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+
+
+}
+.right{
+    text-align: center;
+}
+
+
+
+img {
+    order: 1;
+    margin: 15px;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+}
+h1 {
+   font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    order: 2;
+    width: 75%;
+    height: auto;
+    text-align: center;
+   
+	font-weight: 400, 700;
+	color: hsl(218, 44%, 22%);
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: hsl(212, 45%, 89%);
+    order: 3;
+    width: 75%;
+    height: auto;
+    text-align: center;
+}
+
+.footer { 
+    height: auto;
+    grid-area: footer;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.footer a { 
+    color: hsl(228, 45%, 44%); 
+}
